@@ -1,1 +1,66 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="first.js" defer></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="#" class="nav-main-elem">TODOs List</a>
+        <a class="nav-2main-elem" href="#">Home</a>
+        <a class="nav-elem" href="#">Link</a>
+        <a class="nav-elem" href="#">Contact</a>
+        <a class="nav-elem" href="#">About</a>
+        <div class="nav-end"><input type="text" placeholder="Search" class="button-bar">
+            <button type="submit" id="button">Search</button>
+        </div>
+    </div>
+    <h2 id="form-heading">TODOs List</h2>
+    <div class="main-form-container">
+        <div class="form-container">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+                <small id="text">Add an item to the list</small>
+            </div>
+            <div class="form-group">
+                <label for="description" class="Description">Description</label>
+                <textarea id="description"></textarea>
+            </div>
+            <div class="button-div">
+                <button type="submit" id="button-sub">Add to list</button>
+                <button  id="button-clear" onclick="clearStorage()">Clear list</button>
+            </div>
+        </div>
+    </div>
+    <div class="table-container">
+        <div class="table">
+            <h3 id="item">Your items</h3>
+            <table class="center">
+                <thead>
+                    <tr>
+                        <th scope="col">Sno</th>
+                        <th scope="col">Item Title</th>
+                        <th scope="col">Item Description</th>
+                        <th scope="col">Action</th>
+                    </tr> 
+                </thead>
+                <tbody id="tablebody">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>title</td>
+                        <td>description</td>
+                        <td><button id="button-delete">Delete</button> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
